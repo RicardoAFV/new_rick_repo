@@ -1,8 +1,11 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-ruta = "C:/Users/Ricardo/new_rick_repo/vehicles_us.csv"
+import pandas as pd
+
+ruta = "../vehicles_us.csv"  # Sube una carpeta para encontrar el CSV
 vehicles_us = pd.read_csv(ruta)
+
 # Título o encabezado principal de la app
 st.header('Análisis de anuncios de venta de coches')
 hist_button = st.button('Construir histograma')
